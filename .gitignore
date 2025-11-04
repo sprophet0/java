@@ -1,0 +1,22 @@
+/openJdk-24/
+*.class
+
+# Log files
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+*.iml
+
+# Maven
+/target/
+
+# Gradle
+.gradle/
+/build/
+
+# Package files
+*.jar
+*.war
+*.ear
