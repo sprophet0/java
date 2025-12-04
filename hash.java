@@ -1,7 +1,6 @@
 import java.util.LinkedList;
 import java.util.Random;
 
-
 public class hash {
 
     public static void main(String[] args) {
@@ -17,7 +16,6 @@ public class hash {
             System.out.print(anahtarlar[i] + " ");
         }
         System.out.println("\n" + "-------------------------------------------------" + "\n");
-
 
         HashTableChaining chainingTable = new HashTableChaining(TABLO_BOYUTU);
         for (int anahtar : anahtarlar) {
@@ -50,7 +48,6 @@ public class hash {
     }
 }
 
-
 class HashTableChaining {
     private LinkedList<Integer>[] table;
     private int TABLE_SIZE;
@@ -66,7 +63,6 @@ class HashTableChaining {
         for (int i = 0; i < TABLE_SIZE; i++) {
             table[i] = new LinkedList<>();
         }
-    }
 
     public void insert(int key) {
         int index = hash(key);
@@ -83,7 +79,7 @@ class HashTableChaining {
             }
         }
     }
-}
+}}
 
 class HashTableLinearProbing {
     private Integer[] table;
